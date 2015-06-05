@@ -77,7 +77,7 @@ namespace cv {
         }
     }
 
-    void MoorContourTracingImpl (Mat const &image, Point const &ref, vector<Point> *contour) {
+    void MoorContourTracing (Mat const &image, Point const &ref, vector<Point> *contour) {
         using namespace contour_tracing_impl;
         BOOST_VERIFY(image.channels() == 1);
         switch (image.depth()) {
