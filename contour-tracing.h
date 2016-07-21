@@ -84,6 +84,9 @@ namespace cv {
             case CV_32S:
                 MoorContourTracingImpl<int32_t>(image, ref, contour);
                 break;
+            case CV_8U:
+                MoorContourTracingImpl<uint8_t>(image, ref, contour);
+                break;
             default:
                 BOOST_VERIFY(0);
         }
